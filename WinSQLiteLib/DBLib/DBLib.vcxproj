@@ -34,7 +34,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
-    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfMfc>false</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
@@ -78,7 +78,7 @@
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>D:\prjvc32_2020\DB_Library;D:\PRJVC32_2020\LIB32;D:\PRJVC32_2020\ALD\RAMCW;D:\PRJVC32_2020\ALD\RAMCW\LIB;D:\PRJVC32_2020\ALD\RAMCW\APP\RAMCW;D:\PRJVC32_2020\ULTIMATE TOOLBOX\INCLUDE;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
     <LibraryPath>D:\PRJVC32_2020\LIB32;D:\PRJVC32_2020\LIB32\Lib;D:\PRJVC32_2020\ALD\RAMCW\LIB;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
-    <OutDir>D:\prjvc32_2020\lib32\Lib\</OutDir>
+    <OutDir>$(ProjectDir)..\..\Lib\</OutDir>
     <SourcePath>D:\PRJVC32_2020\ULTIMATE TOOLBOX\INCLUDE;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -86,7 +86,7 @@
     <IncludePath>D:\prjvc32_2020\DB_Library;D:\prjvc32_2020\LIB32;D:\prjvc32_2020\ALD\RAMCW;D:\prjvc32_2020\ALD\RAMCW\LIB;D:\prjvc32_2020\ALD\RAMCW\APP\RAMCW;D:\prjvc32_2020\ULTIMATE TOOLBOX\INCLUDE;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
     <SourcePath>D:\PRJVC32_2020\ULTIMATE TOOLBOX\INCLUDE;$(SourcePath)</SourcePath>
     <LibraryPath>D:\PRJVC32_2020\LIB32;D:\prjvc32_2020\LIB32\Lib;D:\prjvc32_2020\ALD\RAMCW\LIB;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
-    <OutDir>D:\prjvc32_2020\lib32\Lib\</OutDir>
+    <OutDir>$(ProjectDir)..\..\Lib\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
