@@ -1,10 +1,20 @@
 #pragma once
+
+/**
+ * @file    DB_Interface.h
+ * @brief   Interface classs for all database wrapper classes
+ *
+ * Copyright (c) 2019-2021 Vladimir Novick ( https://www.linkedin.com/in/vladimirnovick/ )
+ *
+ * Distributed under the MIT License (MIT) (See accompanying file LICENSE.txt
+ * or copy at http://opensource.org/licenses/MIT)
+ */
+
+
 #include "Mtype.h"
 #include <string>
 #include <windows.h>
 #include <list>
-
-
 
 
 
@@ -18,28 +28,6 @@ class  DB_Interface
 {
 public:
 
-    int virtual filexist(char* fileName) = 0;
-
-    void virtual _unlink(char* fileName) = 0;
-
-    int  virtual db_findfirst(const char* filespec, string* fileinfo) = 0;
-
-    void virtual RenameTable(char* OldFile, char* NewFileName) = 0;
-
-    int virtual DeleteTable(char * fileNamePath) = 0;
-
-    int virtual CopyTable(char * targetFileNamePath, char * sourceFileNamepath) = 0;
-
-    int virtual GetFileList(char* mask, list<string>* fileList) = 0;
-
-    void virtual NewBackupProject(HWND hWndParent, const char far* Drive, const char far* PrjName, int FlagOldVersion) = 0;
-    /// <summary>
-    ///   rename  project
-    /// </summary>
-    /// <param name="oldname"></param>
-    /// <param name="newname"></param>
-    /// <returns></returns>
-    int virtual RenameProject(char* oldname, char* newname) = 0;
      /// <summary>
     ///   get base class name
     /// </summary>
